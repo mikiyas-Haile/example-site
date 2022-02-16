@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Example App</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span id="logo">
+                LOGO HERE
+            </span>
+        </div>
+        <div id="navs">
+            <a onclick="OpenHome()">
+                <button>
+                    Home
+                </button>
+            </a>
+            <a onclick="OpenPricing()">
+                <button>
+                    Pricing
+                </button>
+            </a>
+            <a>
+                <div class="dropdown">
+                    <button class="dropbtn">Contact</button>
+                    <div class="dropdown-content">
+                      <a href="#">some.email@company.com</a>
+                      <a href="#">TikTok username</a>
+                      <a href="#">Instagram username</a>
+                      <a href="#">Find us on Twitter</a>
+                    </div>
+                  </div>
+            </a>
+            <a>
+                <div id="download-btn-header">
+                    <button>Download</button>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div id="app"></div>
+</body>
+
+</html>
+<script>
+    const app = document.getElementById('app');
+    app.innerHTML = `
+    <a href="#intro" id="intro">
+        <div id="intro">
+            <h1>Lorum Ipsum!</h1>
+            <h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit amet
+                convallis augue rutrum. Maecenas!
+            </h4>
+            <div id="cards">
+                <div id="card">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit
+                        amet
+                        convallis augue rutrum. Maecenas!
+                    </span>
+                </div>
+                <div id="card">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit
+                        amet
+                        convallis augue rutrum. Maecenas!
+                    </span>
+                </div>
+                <div id="card">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit
+                        amet
+                        convallis augue rutrum. Maecenas!
+                    </span>
+                </div>
+            </div>
+            <div id="download-btn-container">
+                <div id="download-btn">
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+    </a>
+    `
+    function OpenPricing() {
+        const html = document.getElementById('app');
+        html.innerHTML = `
+        <div id="columns-container">
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Lorem ipsum</li>
+                <li class="grey">rus. Integ</li>
+                <li>uis vel ligula</li>
+                <li>a dignissim id n</li>
+                <li>gula. Etiam </li>
+                <li>s eros sed e</li>
+                <li class="grey"><a href="#" class="button">Action</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Lorem ipsum</li>
+                <li class="grey">rus. Integ</li>
+                <li>uis vel ligula</li>
+                <li>a dignissim id n</li>
+                <li>gula. Etiam </li>
+                <li>s eros sed e</li>
+                <li class="grey"><a href="#" class="button">Action</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Lorem ipsum</li>
+                <li class="grey">rus. Integ</li>
+                <li>uis vel ligula</li>
+                <li>a dignissim id n</li>
+                <li>gula. Etiam </li>
+                <li>s eros sed e</li>
+                <li class="grey"><a href="#" class="button">Action</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Lorem ipsum</li>
+                <li class="grey">rus. Integ</li>
+                <li>uis vel ligula</li>
+                <li>a dignissim id n</li>
+                <li>gula. Etiam </li>
+                <li>s eros sed e</li>
+                <li class="grey"><a href="#" class="button">Action</a></li>
+            </ul>
+        </div>
+    </div>
+            `
+    }
+    function OpenHome() {
+        const html = document.getElementById('app');
+        app.innerHTML = `
+    <a href="#intro" id="intro">
+        <div id="intro">
+            <h1>Lorum Ipsum!</h1>
+            <h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit amet
+                convallis augue rutrum. Maecenas!
+            </h4>
+            <div id="cards">
+                <div id="card">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit
+                        amet
+                        convallis augue rutrum. Maecenas!
+                    </span>
+                </div>
+                <div id="card">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit
+                        amet
+                        convallis augue rutrum. Maecenas!
+                    </span>
+                </div>
+                <div id="card">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum est ut nisi gravida, sit
+                        amet
+                        convallis augue rutrum. Maecenas!
+                    </span>
+                </div>
+            </div>
+            <div id="download-btn-container">
+                <div id="download-btn">
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+    </a>
+    `
+    }
+</script>
